@@ -1,0 +1,21 @@
+$text: #3c3c3c;
+$bg: #f9d112;
+
+@mixin m300 {
+    font-family: 'Merriweather',
+    serif;
+    font-weight: 300;
+}
+
+@mixin m400i {
+    font-family: 'Merriweather',
+    serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@mixin m700 {
+    font-family: 'Merriweather',
+    serif;
+    font-weight: 700;
+}

@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $text;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Merriweather',
+    serif;
+    font-weight: 400;
+    color: $text;
+}
+
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 55px;
+    letter-spacing: -0.74px;
+    @include m300;
+    max-width: 520px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto 108px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/title.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 253px;
+        height: 33px;
+        bottom: -51px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
