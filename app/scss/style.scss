@@ -9,6 +9,7 @@
     background-position: center;
     height: 100vh;
     position: relative;
+    padding: 0 15px;
 
 }
 
@@ -44,11 +45,14 @@
         padding: 10px 24px;
     }
 }
-
+.header__content {
+    height: 83vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .title.header__title {
-    position: absolute;
-    top: 50%;
-    transform: translate(-47px, -50%);
+    margin: 0;
 }
 
 // end header
@@ -172,6 +176,7 @@
 .about {
     background-color: #eeefef;
     position: relative;
+    z-index: 1;
     &::before {
         content: '';
         position: absolute;
@@ -184,6 +189,7 @@
         max-width: 900px;
         width: 100%;
         min-height: 668px;
+        z-index: -1;
     }
 }
 .about__inner {
@@ -341,6 +347,7 @@
 .footer__bot {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: 50px;
   align-items: flex-end;
 }

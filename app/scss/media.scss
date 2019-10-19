@@ -2,4 +2,142 @@
 @import 'global';
 
 
+@media(max-width: 1500px){
+  .specials__inner {
+      flex-wrap: wrap;
+  }
+}
+@media(max-width: 1300px){
+  .specials {
+      padding: 0;
+  }
+  .tab-item {
+      columns: 1;
+  }
+}
+@media(max-width: 1000px){
+ .advantages__inner {
+     flex-wrap: wrap;
+     margin-left: -85px;
+ }
+ .advantages__item {
+     flex-basis: calc(50% - 85px);
+     margin-left: 85px;
+     margin-bottom: 30px;
+ }
+}
+
+@media(max-width: 700px){
+    .header__nav {
+        ul {
+            display: none;
+        }
+    }
+    .header__btn {
+        margin-top: 50px;
+        width: 30px;
+        display: block;
+        .raw {
+            height: 3px;
+            background-color: $text;
+            & + .raw {
+                margin-top: 5px;
+            }
+        }
+    }
+     .menu__list {
+         display: none;
+         background-color: $bg;
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 60px;
+         z-index: 1;
+         text-align: center;
+
+         a {
+             display: block;
+             padding: 10px 0px;
+             border-bottom: 1px solid #fff;
+         }
+
+         li {
+             display: block;
+
+             &+li {
+                 margin-left: 0;
+             }
+
+             &:first-child {
+                 border-top: 1px solid #fff;
+             }
+         }
+     }
+}
+
+@media(max-width: 610px) {
+    .footer__link {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .footer__link-address {
+        margin-bottom: 30px;
+    }
+    .title {
+        font-size: 30px;
+        &.header__title {
+            max-width: 320px;
+        }
+    }
+    .container {
+        padding: 0;
+    }
+     .advantages__inner {
+         margin-left: 0;
+     }
+
+     .advantages__item {
+         flex-basis: 100%;
+         margin-left: 0;
+     }
+}    
+@media(max-width: 590px) {
+    .footer__form form  {
+        input {
+           display: block;
+        margin-left: 0;
+        width: 100%; 
+        & + input {
+            margin-left: 0;
+        }
+        }
+        
+    }
+}    
+@media(max-width: 540px) {
+    .tabs span {
+        display: block;
+    }
+}    
+@media(max-width: 410px) {
+    .footer__bot {
+        display: block;
+    }
+    .footer__copy {
+        margin-bottom: 30px;
+    }
+}    
+
+
+
+
+
+@media(min-width: 700px){
+    .header__nav {
+        ul {
+            display: block !important;
+        }
+    }
+}
+
 
