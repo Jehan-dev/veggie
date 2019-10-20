@@ -30,7 +30,7 @@
 
         &:hover {
             transition: all .3s;
-            border: 1px solid $text;
+            border: 1px solid $text2;
         }
 
 
@@ -43,6 +43,7 @@
         font-size: 18px;
         line-height: 30px;
         padding: 10px 24px;
+        color: $text2;
     }
 }
 .header__content {
@@ -50,6 +51,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    color: $text2;
 }
 .title.header__title {
     margin: 0;
@@ -122,15 +124,19 @@
 
 .specials__inner {
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .specials__item {
+    flex-basis: calc(100%/6);
     img {
         width: 100%;
+        min-height: 300px;
     }
 
     &-box {
-        height: 248px;
+        height: 300px;
         padding: 50px 0;
         text-align: center;
         background-color: #ebebeb;
@@ -269,13 +275,10 @@
     background-size: cover;
     background-position: center;
 }
-.footer__wrapper {
-  
-}
 .footer__top {
     max-width: 573px;
     width: 100%;
-    margin-left: auto;
+    // margin-left: auto;
     margin-bottom: 193px;
 }
 .footer__link {
@@ -333,7 +336,6 @@
         }
         button {
             display: block;
-            width: 100px;
             border: 1px solid $text;
             background-color: transparent;
             cursor: pointer;

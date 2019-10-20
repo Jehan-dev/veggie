@@ -14,6 +14,9 @@
   .tab-item {
       columns: 1;
   }
+  .specials__item {
+      flex-basis: calc(33.3334%);
+  }
 }
 @media(max-width: 1000px){
  .advantages__inner {
@@ -27,6 +30,11 @@
  }
 }
 
+@media(max-width: 770px){
+ .specials__item {
+     flex-basis: calc(50%);
+ }
+}
 @media(max-width: 700px){
     .header__nav {
         ul {
@@ -119,6 +127,11 @@
         display: block;
     }
 }    
+@media(max-width: 500px) {
+ .specials__item {
+     flex-basis: 100%;
+ }
+}
 @media(max-width: 410px) {
     .footer__bot {
         display: block;
